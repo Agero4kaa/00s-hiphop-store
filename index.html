@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Y2K Archive — онлайн-магазин и цифровой архив хип-хоп моды 2000-х.">
+  <title>Y2K ARCHIVE — Hip-Hop Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">THE GOLDEN ERA NEVER LEFT — Y2K HIP-HOP ARCHIVE</div>
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="Y2K Archive home">Y2K<span>®</span><small>ARCHIVE</small></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    <nav id="mainNav">
+      <a href="#catalog">КАТАЛОГ</a><a href="#brands">БРЕНДЫ</a><a href="#story">КУЛЬТУРА</a>
+    </nav>
+    <button class="cart-trigger" id="cartTrigger">КОРЗИНА <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grain"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">EST. 1999 — STILL ICONIC</p>
+        <h1>THE<br><em>00s</em><br>ARE BACK.</h1>
+        <p class="hero-desc">Эпоха больших силуэтов, громких логотипов и собственного стиля. Исследуй культовую моду хип-хопа нулевых.</p>
+        <a class="button button-light" href="#catalog">СМОТРЕТЬ КОЛЛЕКЦИЮ <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-label="Графическая композиция в стиле уличной моды нулевых">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-sticker">NO<br>RULES<br><b>2000</b></div>
+        <div class="hero-word">HIP<br>HOP</div>
+        <div class="hero-caption">BAGGY FITS / LOUD GRAPHICS / BIG ENERGY</div>
+      </div>
+      <div class="hero-index">01 / 04</div>
+    </section>
+
+    <section class="ticker" aria-label="Популярные бренды">
+      <div>COOGI ✳ SOUTHPOLE ✳ ECKŌ UNLTD. ✳ ED HARDY ✳ AFFLICTION ✳ ROCAWEAR ✳</div>
+    </section>
+
+    <section class="section catalog-section" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED STREETWEAR</p><h2>THE DROP<span> / 001</span></h2></div>
+        <p class="section-note">Выбери свой силуэт.<br>Найди свою эпоху.</p>
+      </div>
+      <div class="toolbar">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">ВСЁ</button>
+          <button class="filter" data-filter="tops">ВЕРХ</button>
+          <button class="filter" data-filter="bottoms">НИЗ</button>
+          <button class="filter" data-filter="accessories">АКСЕССУАРЫ</button>
+        </div>
+        <div class="tools">
+          <input id="searchInput" type="search" placeholder="Найти вещь..." aria-label="Поиск товаров">
+          <select id="sortSelect" aria-label="Сортировка">
+            <option value="featured">Сначала избранное</option><option value="low">Сначала дешевле</option><option value="high">Сначала дороже</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>Ничего не найдено. Попробуй изменить запрос.</p>
+    </section>
+
+    <section class="brand-section" id="brands">
+      <div class="section brand-heading"><p class="eyebrow">THE NAMES THAT BUILT THE LOOK</p><h2>LEGENDS<br><span>NEVER DIE.</span></h2></div>
+      <div class="brand-grid">
+        <article class="brand-card brand-coogi"><span>01 / KNITWEAR</span><b>COOGI</b><small>COLOR. TEXTURE. STATUS.</small></article>
+        <article class="brand-card brand-south"><span>02 / STREET</span><b>SOUTHPOLE</b><small>BUILT FOR THE BLOCK.</small></article>
+        <article class="brand-card brand-ecko"><span>03 / GRAFFITI</span><b>ECKŌ</b><small>UNLEASH THE RHINO.</small></article>
+        <article class="brand-card brand-ed"><span>04 / GRAPHIC</span><b>ED HARDY</b><small>ART ON YOUR SKIN.</small></article>
+        <article class="brand-card brand-aff"><span>05 / ROCK</span><b>AFFLICTION</b><small>LOUD BY NATURE.</small></article>
+        <article class="brand-card brand-roca"><span>06 / CULTURE</span><b>ROCAWEAR</b><small>FROM THE CITY UP.</small></article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-number">02—00</div>
+      <div class="story-content"><p class="eyebrow">MORE THAN CLOTHES</p><h2>IT WAS<br>A <em>STATEMENT.</em></h2>
+        <p>Хип-хоп мода нулевых — это не просто одежда. Это язык улиц, музыкальных клипов и независимого самовыражения. Свободные джинсы, массивные кроссовки, яркий трикотаж, графические принты и заметные аксессуары сформировали узнаваемый визуальный код целого поколения.</p>
+        <p class="story-small">Y2K ARCHIVE — учебный концепт-магазин, посвящённый эстетике эпохи. Представленные товары и цены демонстрационные.</p>
+      </div>
+      <div class="story-symbol">★</div>
+    </section>
+  </main>
+
+  <footer><a class="logo footer-logo" href="#">Y2K<span>®</span><small>ARCHIVE</small></a><p>AN HOMAGE TO THE CULTURE THAT MOVED THE WORLD.</p><span>© 2026 Y2K ARCHIVE — STUDENT PROJECT</span></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Корзина" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>КОРЗИНА</h2></div><button id="closeCart" aria-label="Закрыть корзину">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="total-line"><span>ИТОГО</span><strong id="cartTotal">0 сум</strong></div><button class="button button-dark" id="checkoutButton">ОФОРМИТЬ ЗАКАЗ ↗</button><p class="cart-disclaimer">Демонстрационный интерфейс. Оплата не производится.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
